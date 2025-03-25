@@ -1,11 +1,12 @@
 import React from 'react'
 
-const layout = () => {
+export const layout = ({children} : {children: React.ReactNode}) => {
   return (
-    <div>
-      
+    <div className='flex min-h-screen'>
+      <section>
+        Left Image
+      </section>
+      {children}
     </div>
   )
 }
-
-export default layout
